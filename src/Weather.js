@@ -18,7 +18,7 @@ export default function Weather() {
       </div>
 
       <div className="appcontent">
-        <h5>Test</h5>
+        <h5></h5>
         <h1>Dalkeith</h1>
       </div>
 
@@ -31,9 +31,9 @@ export default function Weather() {
           <a href="/">℃</a>
           <a href="/">°F</a>
         </span>
-        <span className="wDescription">Cloudiness: 10%</span>
-        <span className="humidity">Humidity: 10%</span>
-        <span className="wind-speed">Wind: 4km/h</span>
+        <span className="wDescription">Cloudiness: 10%</span> <br />
+        <span className="humidity">Humidity: 10%</span> <br /> 
+        <span className="wind-speed">Wind: 4km/h</span> <br />
       </div>
       <div className="row weather-forecast">
         <div className="col-2">
