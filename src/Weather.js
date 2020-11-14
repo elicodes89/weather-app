@@ -1,22 +1,45 @@
 import React from "react";
-import axios from 'axios';
-import Loader from "react-loader-spinner";
 
+export default function Weather() {
+  return (
+    <div>
+      <div className="Weather">
+        <div className="City">
+          <form className="search-form">
+            <input
+              type="text"
+              placeholder="Enter a city"
+              autocomplete="off"
+              autofocus="on"
+            />
+            <input type="submit" value="🔍" />
+          </form>
+        </div>
+      </div>
 
-export default function Weather(props){
-	function handleResponse(response) {
+      <div className="appcontent">
+        <h5>Test</h5>
+        <h1>Dalkeith</h1>
+      </div>
 
-		alert (`The weather in ${response.data.name} is ${response.data.main.temp} Degrees`);
-	}
-    
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=eeb8f7e85a1864933f31f435c249cf5b&units=metric`;
-	axios.get(url).then(handleResponse);
-	
-	return (
-	<Loader
-	type="Puff"
-	color="orange"
-	width={68}
-	/>
-	);
-  }
+      <div className="alt">Rain</div>
+      <div className="notes">
+        Currently:
+        <h4>Test</h4>
+        <span className="temperature"></span>
+        <span className="units">
+          <a href="/">℃</a>
+          <a href="/">°F</a>
+        </span>
+        <span className="wDescription">Cloudiness: 10%</span>
+        <span className="humidity">Humidity: 10%</span>
+        <span className="wind-speed">Wind: 4km/h</span>
+      </div>
+      <div className="row weather-forecast">
+        <div className="col-2">
+          <h3> 19:00 </h3>
+        </div>
+      </div>
+    </div>
+  );
+}
