@@ -38,6 +38,9 @@ export default function Weather() {
       <div className="row weather-forecast">
         <div className="col-2">
           <h3> 19:00 </h3>
+		<a href="https://github.com/elicodes89/weather-app" target="_blank">Open-source code </a> by EliCodes
+
+
         </div>
       </div>
     </div>
