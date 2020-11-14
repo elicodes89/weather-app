@@ -15,7 +15,7 @@ export default function Weather(props){
 	return (
 	<Loader
 	type="Puff"
-	color="lime"
+	color="orange"
 	width={68}
 	/>
 	);
