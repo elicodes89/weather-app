@@ -14,7 +14,13 @@ export default function Weather() {
 	   <h1>Dalkeith</h1>
 	   
 		   Saturday 03:00 <br></br>
-		   It is Raining
+		   It is Raining <br></br>
+		   <div className= "description">
+		   Precipitation: <br></br>
+		   Humidity: <br></br>
+		   Wind: <br></br>
+		      </div>
+
 	  
    <div className="row">
 	   <div className="col-6">

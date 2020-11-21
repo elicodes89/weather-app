@@ -6,4 +6,28 @@
   margin: 30px auto;
   max-width: 900px;
   border-radius: 5px;
+  background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+}
+
+.form-control {
+  border: 10px;
+  border-radius: 8px;
+  color: black;
+  background: #d2f6c5;
+  padding: 8px 6px 6px 8px;
+}
+
+.btn {
+  border: 10px;
+  border-radius: 8px;
+  color: black;
+  background: #4ddf19;
+  padding: 8px 6px 6px 8px;
+}
+
+.description {
+  text-align: right;
+}
+
+.row {
 }
