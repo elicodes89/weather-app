@@ -5,33 +5,34 @@ import "./Weather.css";
 export default function Weather() {
   return (
    <div className="container">
+	   <form>
+		   <input type="search"
+		   placeholder="Enter a city..."
+		   className="form-control" />
+		   <input type="submit" value="Search" className="btn" />
+	   </form>
 	   <h1>Dalkeith</h1>
-	   <ul>
-		   <li>Saturday 03:00</li>
-		   <li>It is Raining</li>
-	   </ul>
+	   
+		   Saturday 03:00 <br></br>
+		   It is Raining
+	  
    <div className="row">
 	   <div className="col-6">
-		   <ul>
-			   <li>
+		   
 				   Sunday
-			   </li>
-			   <li>
+			   
 				   Monday
-			   </li>
-			   <li>
+			   
 				   Tuesday
-			   </li>
-			   <li>
+			   
 				   Wednesday
-			   </li>
-			   <li>
+			   
 				   Thursday
-			   </li>
-			   <li>
+			   
 				   Friday
-			   </li>
-		   </ul>
+			   
    </div>
    </div>
-   </div>
+   </div> 
+  );
+}    
