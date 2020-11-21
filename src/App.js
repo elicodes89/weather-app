@@ -1,16 +1,19 @@
 import './App.css';
 import Weather from "./Weather";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      
+  
+  <div className="App">
+	  WeatherWise
+	  <footer>
+		  A REACT APP created by EliCodes
+		  <a href="https://github.com/elicodes89/weather-app" target="_blank">
+		  </a> 
+	  </footer>
+	       
 		<Weather />
-        
-      </header>
     </div>
   );
 }
 
-export default App;
