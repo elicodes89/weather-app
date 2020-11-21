@@ -8,9 +8,7 @@ export default function App() {
 	  <div className="container">
 	  WeatherWise
 	  <footer>
-		  A REACT APP created by EliCodes
-		  <a href="https://github.com/elicodes89/weather-app" target="_blank">
-		  </a> 
+		   
 	  </footer>
 	       
 		<Weather />
