@@ -1,11 +1,11 @@
 import "./App.css";
-import "./index.css";
 import Weather from "./Weather";
 
 export default function App() {
   return (
   
   <div className="App">
+	  <div className="container">
 	  WeatherWise
 	  <footer>
 		  A REACT APP created by EliCodes
@@ -14,6 +14,7 @@ export default function App() {
 	  </footer>
 	       
 		<Weather />
+		</div>	  
     </div>
   );
 }
