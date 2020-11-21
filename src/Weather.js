@@ -12,7 +12,26 @@ export default function Weather() {
 	   </ul>
    <div className="row">
 	   <div className="col-6">
-
+		   <ul>
+			   <li>
+				   Sunday
+			   </li>
+			   <li>
+				   Monday
+			   </li>
+			   <li>
+				   Tuesday
+			   </li>
+			   <li>
+				   Wednesday
+			   </li>
+			   <li>
+				   Thursday
+			   </li>
+			   <li>
+				   Friday
+			   </li>
+		   </ul>
    </div>
    </div>
-      </div>
+   </div>
