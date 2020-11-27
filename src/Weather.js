@@ -8,6 +8,13 @@ export default function Weather() {
 	let apiUrl = `http://api.openweathermap.org/data/25/weather?
 	q=${city}&appid=${apiKey}&units=metric`;
 	let city = "London";
+	let [temperature, setTemperature] = useState(null);
+	let [ready, setReady] = useState(false);
+
+	function handleResponse(response){
+		setTemperature(response.data.main.temp);
+		setReady(true);
+		}
   return (
    <div className="container">
 	   <form>
