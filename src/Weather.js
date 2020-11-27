@@ -29,10 +29,16 @@ export default function Weather(props) {
 			  return (
    <div className="container">
 	   <form>
+		   <div className="row">
+			   <div className="col-12">
 		   <input type="search"
 		   placeholder="Enter a city..."
 		   className="form-control" />
-		   <input type="submit" value="Search" className="btn" />
+		   <input type="submit" value="Search" className="btn btn-primary" />
+
+	   </div>
+
+	   </div>
 	   </form>
 	   <h1>{weatherData.city}</h1>
 	   <div className="image">
