@@ -9,10 +9,13 @@ export default function Weather() {
 	let [weatherData, setWeatherData] = useState({});
 
 	function handleResponse(response){
+
+
 		setWeatherData({
 			temperature: response.data.main.temp,
-			wind: 20,
-			city: response.data.name
+			wind: response.data.wind.speed,
+			city: response.data.name,
+			humidity: response.data.main.humidity,
 		
 		});
 
@@ -29,15 +32,23 @@ export default function Weather() {
 		   <input type="submit" value="Search" className="btn" />
 	   </form>
 	   <h1>{weatherData.city}</h1>
+	   <div className="image">
+		   <img
+		   src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+		   alt="Mostly Cloudy"
+		   className="weatherIcon"
+		   />
+		   
+	   </div>
+	   		   Saturday 03:00 <br></br>
 
 
-		   Saturday 03:00 <br></br>
-		   It is Raining <br></br>
-		   <div className= "description">
-		   <div className="temperature">{Math.round(temperature)}</div>
+
+		   <div className= "description">{weatherData.description}
+		   <div className="temperature">{Math.round(weatherData.temperature)}</div>
 		   Precipitation: <br></br>
-		   Humidity: <br></br>
-		   Wind: <br></br>
+		   Humidity: {weatherData.humidity} %<br></br>
+		   Wind: {weatherData.wind} km/h <br></br>
 		      </div>
 
 	  
@@ -62,8 +73,8 @@ export default function Weather() {
   );
 
 	} else {
-	let apiKey = "eeb8f7e85a1864933f31f435c249cf5b";
 	let city = "London";
+	let apiKey = "eeb8f7e85a1864933f31f435c249cf5b";
 	let apiUrl = `http://api.openweathermap.org/data/2.5/weather?
 	q=${city}&appid=${apiKey}&units=metric`;
 	axios.get(apiUrl).then(handleResponse);
