@@ -6,10 +6,16 @@ import "./Weather.css";
 export default function Weather() {
 	
 	let [ready, setReady] = useState(false);
-	let [temperature, setTemperature] = useState(null);
+	let [weatherData, setWeatherData] = useState({});
 
 	function handleResponse(response){
-		setTemperature(response.data.main.temp);
+		setWeatherData({
+			temperature: response.data.main.temp,
+			wind: 20,
+			city: response.data.name
+		
+		});
+
 		setReady(true);
 		}
 
@@ -22,7 +28,7 @@ export default function Weather() {
 		   className="form-control" />
 		   <input type="submit" value="Search" className="btn" />
 	   </form>
-	   <h1>Dalkeith</h1>
+	   <h1>{weatherData.city}</h1>
 
 
 		   Saturday 03:00 <br></br>
