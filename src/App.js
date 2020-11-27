@@ -11,7 +11,7 @@ export default function App() {
 		   
 	  </footer>
 	       
-		<Weather />
+		<Weather city= "Barcelona" />
 		</div>	  
     </div>
   );

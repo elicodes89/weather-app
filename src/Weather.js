@@ -3,7 +3,7 @@ import axios from "axios";
 import "./Weather.css";
 
 
-export default function Weather() {
+export default function Weather(props) {
 	
 	let [ready, setReady] = useState(false);
 	let [weatherData, setWeatherData] = useState({ ready: false });
@@ -47,7 +47,7 @@ export default function Weather() {
 
 
 
-		   <div className= "description">{weatherData.description}
+		   <div className= "text-capitalize">{weatherData.description}
 		   <div className="temperature">{Math.round(weatherData.temperature)}</div>
 		   Precipitation: <br></br>
 		   Humidity: {weatherData.humidity} %<br></br>
@@ -76,10 +76,9 @@ export default function Weather() {
   );
 
 	} else {
-	let city = "London";
 	let apiKey = "eeb8f7e85a1864933f31f435c249cf5b";
 	let apiUrl = `http://api.openweathermap.org/data/2.5/weather?
-	q=${city}&appid=${apiKey}&units=metric`;
+	q=${props.city}&appid=${apiKey}&units=metric`;
 	axios.get(apiUrl).then(handleResponse);
 
 	return "The current weather is loading";
