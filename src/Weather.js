@@ -6,25 +6,26 @@ import "./Weather.css";
 export default function Weather() {
 	
 	let [ready, setReady] = useState(false);
-	let [weatherData, setWeatherData] = useState({});
+	let [weatherData, setWeatherData] = useState({ ready: false });
 
 	function handleResponse(response){
 
 
 		setWeatherData({
+			ready: true,
 			temperature: response.data.main.temp,
 			wind: response.data.wind.speed,
 			city: response.data.name,
 			humidity: response.data.main.humidity,
 			iconUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
-			description: response.data.weather[0].description
+			description: response.data.weather[0].description,
+			date: "Saturday 03:00"
 		
 		});
 
-		setReady(true);
 		}
 
-		if (ready) {
+		if (weatherData.ready) {
 			  return (
    <div className="container">
 	   <form>
@@ -42,7 +43,7 @@ export default function Weather() {
 		   />
 		   
 	   </div>
-	   		   Saturday 03:00 <br></br>
+	   		   <div className="fecha">{weatherData.date}</div>
 
 
 
