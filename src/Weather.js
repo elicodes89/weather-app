@@ -16,6 +16,8 @@ export default function Weather() {
 			wind: response.data.wind.speed,
 			city: response.data.name,
 			humidity: response.data.main.humidity,
+			iconUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
+			description: response.data.weather[0].description
 		
 		});
 
@@ -34,8 +36,8 @@ export default function Weather() {
 	   <h1>{weatherData.city}</h1>
 	   <div className="image">
 		   <img
-		   src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-		   alt="Mostly Cloudy"
+		   src={weatherData.iconUrl}
+		   alt={weatherData.description}
 		   className="weatherIcon"
 		   />
 		   
