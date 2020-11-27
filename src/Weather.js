@@ -4,10 +4,7 @@ import "./Weather.css";
 
 
 export default function Weather() {
-	let apiKey = "eeb8f7e85a1864933f31f435c249cf5b";
-	let apiUrl = `http://api.openweathermap.org/data/25/weather?
-	q=${city}&appid=${apiKey}&units=metric`;
-	let city = "London";
+	
 	let [temperature, setTemperature] = useState(null);
 	let [ready, setReady] = useState(false);
 
@@ -15,7 +12,9 @@ export default function Weather() {
 		setTemperature(response.data.main.temp);
 		setReady(true);
 		}
-  return (
+
+		if (ready){
+			  return (
    <div className="container">
 	   <form>
 		   <input type="search"
@@ -53,4 +52,14 @@ export default function Weather() {
    </div>
    </div> 
   );
+	}else{
+	let city = "London";
+	let apiKey = "eeb8f7e85a1864933f31f435c249cf5b";
+	let apiUrl = `http://api.openweathermap.org/data/25/weather?
+	q=${city}&appid=${apiKey}&units=metric`;
+	axios.get(apiUrl).then(handleResponse);
+
+	return "The current weather is loading"
+
+	}
 }    
