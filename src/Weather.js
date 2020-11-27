@@ -24,11 +24,11 @@ export default function Weather() {
 	   </form>
 	   <h1>Dalkeith</h1>
 
-	   <div className="temperature">{temperature}</div>
-	   
+
 		   Saturday 03:00 <br></br>
 		   It is Raining <br></br>
 		   <div className= "description">
+		   <div className="temperature">{Math.round(temperature)}</div>
 		   Precipitation: <br></br>
 		   Humidity: <br></br>
 		   Wind: <br></br>
