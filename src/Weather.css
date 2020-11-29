@@ -31,7 +31,8 @@
 .searchBar {
   border: 10px;
   border-radius: 8px;
-  color: white;
+  background-color: white;
+  color: fuchsia;
   padding: 8px 6px 6px 8px;
 }
 

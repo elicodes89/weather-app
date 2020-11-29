@@ -13,11 +13,10 @@ export default function WeatherData(props){
 	
 	   <div className="temp">
 		   		<WeatherTemp celsius={props.data.temperature} />
-		<WeatherIcon code={props.data.icon} />		   		   
+				<WeatherIcon code={props.data.icon} />		   		   
 	   </div>
 		<div className="details">
 		<div className= "text-capitalize">{props.data.description}<br></br>
-		   Precipitation: <br></br>
 		   Humidity: {props.data.humidity} %<br></br>
 		   Wind: {props.data.wind} km/h <br></br>
 		   </div>

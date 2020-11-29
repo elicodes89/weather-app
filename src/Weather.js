@@ -49,8 +49,13 @@
 		   <input type="submit" value="Search" className="btn" />
 	  	   </div>
 	   		</form>
+			   	
 			<WeatherData data={weatherData} />
-			</div>	   
+
+			</div>	
+
+		  
+
   );
 
 	} else {
