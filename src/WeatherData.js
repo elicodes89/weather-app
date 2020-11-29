@@ -6,13 +6,13 @@ export default function WeatherData(props){
 	return (
 		<div className="WeatherData">
 	<h1>{props.data.city}</h1>
-	   <div className="image">
+	   {/* <div className="image">
 		   <img
 		   src={props.data.iconUrl}
 		   alt={props.data.description}
 		   className="weatherIcon"
 		   />		   
-	   </div>
+	   </div> */}
 	   		   <div className="fecha">{props.data.date}</div>
 
 	   <div className= "text-capitalize">{props.data.description}
