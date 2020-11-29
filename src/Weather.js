@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
+import TheDate from "./TheDate";
 
 
 export default function Weather(props) {
@@ -19,7 +20,7 @@ export default function Weather(props) {
 			humidity: response.data.main.humidity,
 			iconUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
 			description: response.data.weather[0].description,
-			date: "Saturday 03:00"
+			date: new Date(response.data.dt * 1000)
 		
 		});
 
@@ -49,7 +50,10 @@ export default function Weather(props) {
 		   />
 		   
 	   </div>
-	   		   <div className="fecha">{weatherData.date}</div>
+	   		   <div className="fecha">
+				  <TheDate date={weatherData.date} />
+				  </div>
+
 
 
 
