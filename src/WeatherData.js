@@ -1,26 +1,17 @@
 import React from "react";
+import TheDate from "./TheDate";
+
 
 export default function WeatherData(props){
 	return (
 		<div className="WeatherData">
-			<form>
-		   <div className="searchBar">
-			   
-		   <input type="search"
-		   placeholder="Enter a city..."
-		   className="searchBar" />
-		   <input type="submit" value="Search" className="btn" />
-
-	  	   </div>
-	   </form>
-	   <h1>{props.data.city}</h1>
+	<h1>{props.data.city}</h1>
 	   <div className="image">
 		   <img
 		   src={props.data.iconUrl}
 		   alt={props.data.description}
 		   className="weatherIcon"
-		   />
-		   
+		   />		   
 	   </div>
 	   		   <div className="fecha">{props.data.date}</div>
 
@@ -49,6 +40,6 @@ export default function WeatherData(props){
 			   
    </div>
    </div>
-   </div>
+   </div>   	
 	);
 }
