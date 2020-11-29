@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
-
+import TheDate from "./TheDate";
+import WeatherData from "./WeatherData";
 
 export default function Weather(props) {
 	
@@ -22,62 +23,12 @@ export default function Weather(props) {
 			date: "Saturday 03:00"
 		
 		});
-
 		}
 
 		if (weatherData.ready) {
 			  return (
    <div className="container">
-	   <form>
-		   <div className="row">
-			   <div className="col-12">
-		   <input type="search"
-		   placeholder="Enter a city..."
-		   className="form-control" />
-		   <input type="submit" value="Search" className="btn btn-primary" />
-
-	   </div>
-
-	   </div>
-	   </form>
-	   <h1>{weatherData.city}</h1>
-	   <div className="image">
-		   <img
-		   src={weatherData.iconUrl}
-		   alt={weatherData.description}
-		   className="weatherIcon"
-		   />
-		   
-	   </div>
-	   		   <div className="fecha">{weatherData.date}</div>
-
-
-
-		   <div className= "text-capitalize">{weatherData.description}
-		   <div className="temperature">{Math.round(weatherData.temperature)}</div>
-		   Precipitation: <br></br>
-		   Humidity: {weatherData.humidity} %<br></br>
-		   Wind: {weatherData.wind} km/h <br></br>
-		      </div>
-
-	  
-   <div className="row">
-	   <div className="col-6">
-		   
-				   Sunday
-			   
-				   Monday
-			   
-				   Tuesday
-			   
-				   Wednesday
-			   
-				   Thursday
-			   
-				   Friday
-			   
-   </div>
-   </div>
+	   	   <WeatherData data={weatherData} />	   
    </div> 
   );
 
