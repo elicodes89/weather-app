@@ -1,8 +1,15 @@
 import React from "react";
 
 export default function TheDate(props){
-	let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Fruday", "Saturday"];
-
+	let days = [
+		"Sunday", 
+		"Monday", 
+		"Tuesday", 
+		"Wednesday", 
+		"Thursday", 
+		"Fruday", 
+		"Saturday"
+	];
 
 	let day = days[props.date.getDay()];
 	

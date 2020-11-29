@@ -20,26 +20,7 @@ export default function WeatherData(props){
 		   Precipitation: <br></br>
 		   Humidity: {props.data.humidity} %<br></br>
 		   Wind: {props.data.wind} km/h <br></br>
-		      </div>
-
-	  
-   <div className="row">
-	   <div className="col-6">
-		   
-				   Sunday
-			   
-				   Monday
-			   
-				   Tuesday
-			   
-				   Wednesday
-			   
-				   Thursday
-			   
-				   Friday
-			   
+	</div>
    </div>
-   </div>
-   </div>   	
 	);
 }
