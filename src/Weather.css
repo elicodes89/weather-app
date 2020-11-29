@@ -43,7 +43,14 @@
   text-align: center;
 }
 
-.temperature {
+.temp {
   color: black;
   font-size: 60px;
+}
+.fecha {
+  font-size: 30px;
+}
+
+h1 {
+  color: fuchsia;
 }
