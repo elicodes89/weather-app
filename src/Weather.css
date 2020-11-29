@@ -10,9 +10,9 @@
 }
 
 .searchBar {
-  background: lime;
+  background: white;
   padding: 0px 10px 0px 10px;
-  margin: 0px 10px 0px 10px;
+  margin: 30px 10px 30px 10px;
 }
 
 .btn {
@@ -28,11 +28,10 @@
   padding: 8px 6px 6px 8px;
 }
 
-.btn {
+.searchBar {
   border: 10px;
   border-radius: 8px;
-  color: black;
-  background: #4ddf19;
+  color: white;
   padding: 8px 6px 6px 8px;
 }
 
@@ -42,4 +41,9 @@
 
 .row {
   text-align: center;
+}
+
+.temperature {
+  color: black;
+  font-size: 60px;
 }

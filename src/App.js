@@ -9,6 +9,14 @@ export default function App() {
 	  <div className="">
 	  WeatherWise
 	  <footer>
+		  By EliCodes <br></br>
+		  <a
+            href="https://github.com/elicodes89/weather-app"
+            target="_blank"
+          >
+             open-sourced on GitHub
+         
+          </a>
 		   
 	  </footer>
 	       
