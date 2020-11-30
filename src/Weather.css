@@ -1,9 +1,9 @@
-.container {
+.weather {
   text-align: center;
   margin: 50px;
   border: 1px solid rgb(221, 216, 216);
-  padding: 40px 20px;
-  margin: 30px auto;
+  padding: 10px 200px;
+  margin: 10px auto;
   max-width: 900px;
   border-radius: 5px;
   background-color: black;
@@ -12,46 +12,39 @@
 .searchBar {
   background: white;
   padding: 0px 10px 0px 10px;
-  margin: 30px 10px 30px 10px;
+  margin: 10px 10px 10px 10px;
 }
 
-.btn {
+.button {
   background-color: fuchsia;
   border-color: lime;
-}
-
-.form-control {
-  border: 10px;
-  border-radius: 8px;
-  color: black;
-  background: #d2f6c5;
-  padding: 8px 6px 6px 8px;
+  padding: 05px;
 }
 
 .searchBar {
-  border: 10px;
   border-radius: 8px;
-  background-color: white;
-  color: fuchsia;
+  background-color: black;
+  color: lime;
   padding: 8px 6px 6px 8px;
-}
-
-.description {
-  text-align: right;
-}
-
-.row {
-  text-align: center;
+  border-color: lime;
 }
 
 .temp {
-  color: black;
   font-size: 60px;
 }
 .fecha {
   font-size: 30px;
 }
 
+.details,
+.fecha,
+.temp,
+.weatherdata,
 h1 {
   color: fuchsia;
+}
+
+.text-capitalize {
+  font-size: 20px;
+  color: lime;
 }

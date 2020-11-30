@@ -46,7 +46,7 @@
 		   placeholder="Enter a city..."
 		   className="searchBar"
 		   onChange={handleCityChange} />
-		   <input type="submit" value="Search" className="btn" />
+		   <input type="submit" value="Search" className="button" />
 	  	   </div>
 	   		</form>
 			   	

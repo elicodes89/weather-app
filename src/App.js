@@ -8,18 +8,9 @@ export default function App() {
   <div className="App">
 	  <div className="">
 	  WeatherWise
-	  <footer>
-		  By EliCodes <br></br>
-		  <a
-            href="https://github.com/elicodes89/weather-app"
-            target="_blank" rel="noreferrer"
-          >
-             open-sourced on GitHub
-         
-          </a>
-		   
-	  </footer>
-	       
+	  
+		  By EliCodes  <a href="https://github.com/elicodes89/weather-app" target="_blank" rel="noreferrer"
+          > open-sourced on GitHub</a> 
 		<Weather city= "Dalkeith" />
 		</div>	  
     </div>
