@@ -12,7 +12,7 @@ export default function App() {
 		  By EliCodes <br></br>
 		  <a
             href="https://github.com/elicodes89/weather-app"
-            target="_blank"
+            target="_blank" rel="noreferrer"
           >
              open-sourced on GitHub
          
